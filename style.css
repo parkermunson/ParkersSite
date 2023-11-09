@@ -29,46 +29,36 @@
     src: url(CormorantGaramond-Italic.ttf);
 }
 
+/* KEYFRAMES */
 
-/* MAIN ELEMENTS */
+@keyframes fade-down {
+    0% {
+        opactiy: 0;
+        transform: translateY(-800px) scale(0.4);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+
+/* MAIN BODY ELEMENTS */
 body {
     background-color: whitesmoke;
 }
 
-#navHome {
+nav {
     font-family: "RobotoLight";
     display: flex;
-    justify-content: left;
-    padding-left:10px;
+    justify-content: right;
+    align-items: center;
+    padding-right: 15px;
+    margin-top: 15px;
 }
 
-#navLinks {
-    font-family: "RobotoLight";
-    display: flex;
-    justify-content: flex-end;
-    padding-right:10px;
-}
-
-a:link {
-    text-decoration: none;
-    color:black;
-    transition: color 0.5s ease-in-out;
-}
-
-a:visited {
-    text-decoration: none;
-    color:black;
-}
-
-a:active {
-    text-decoration: none;
-    color: rgb(28,117,233);
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(28,117,233);
-}
 
 h1 {
     font-family: "RobotoLight";
@@ -81,46 +71,73 @@ h2 {
 h3 {
     font-family: "RobotoThin";
 }
- p {
-    font-family: "CormorantGRegular";
- }
 
- .text {
+p {
     font-family: "CormorantGRegular";
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(28, 117, 233);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(28, 117, 233);
+}
+
+
+/* DIV CLASSES */
+.text {
+    font-family: "RobotoLight";
     font-size: 16px;
     display: flex;
     margin-left: 65px;
- }
-
+}
 
 .paragraph {
     font-family: "CormorantGRegular";
     font-size: 16px;
     display: flex;
     margin-left: 65px;
-    
-}
 
-.delayedParagraph {
+}
+/* FUNCTION IN GRAVEYARD */
+/* .delayedParagraph {
     font-family: "CormorantGRegular";
     font-size: 16px;
     display: flex;
     margin-left: 65px;
     
-}
+}*/
+
 
 /* ATTRIBUTE ID'S */
-
 #myName {
     display: flex;
     margin-top: 30px;
     margin-left: 65px;
 }
 
+#navHome {
+    animation: fade-down 0.5s;
+}
+
 #blue {
-    color: rgb(28,117,233);
+    color: rgb(28, 117, 233);
 }
 
 #green {
-    color:rgb(52,168,83);
+    color: rgb(52, 168, 83);
 }
