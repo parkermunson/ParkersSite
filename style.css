@@ -8,13 +8,66 @@
     font-family: "RobotoThin";
     src: url(Roboto-Thin.ttf)
 }
+
+@font-face {
+    font-family: "CormorantGLight";
+    src: url(CormorantGaramond-Light.ttf);
+}
+
+@font-face {
+    font-family: "CormorantGLItalic";
+    src: url(CormorantGaramond-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: "CormorantGRegular";
+    src: url(CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: "CormorantGItalic";
+    src: url(CormorantGaramond-Italic.ttf);
+}
+
+
 /* MAIN ELEMENTS */
 body {
     background-color: whitesmoke;
 }
 
-nav {
+#navHome {
     font-family: "RobotoLight";
+    display: flex;
+    justify-content: left;
+    padding-left:10px;
+}
+
+#navLinks {
+    font-family: "RobotoLight";
+    display: flex;
+    justify-content: flex-end;
+    padding-right:10px;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+    transition: color 0.5s ease-in-out;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(28,117,233);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(28,117,233);
 }
 
 h1 {
@@ -29,12 +82,41 @@ h3 {
     font-family: "RobotoThin";
 }
  p {
-    
+    font-family: "CormorantGRegular";
+ }
 
+ .text {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    display: flex;
+    margin-left: 65px;
  }
 
 
+.paragraph {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    display: flex;
+    margin-left: 65px;
+    
+}
+
+.delayedParagraph {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    display: flex;
+    margin-left: 65px;
+    
+}
+
 /* ATTRIBUTE ID'S */
+
+#myName {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 65px;
+}
+
 #blue {
     color: rgb(28,117,233);
 }

@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <title>Parker Munson</title>
 </head>
+
 <body>
-    <nav> Home About Portfolio  </nav>
-    <h1> Parker Munson </h1>
-    <h3> Full-stack Web Developer </h3>
+    <div id="navHome">
+        <nav>
+            <a href="homepage.html" style="margin-top:10px"> Home </a>
+        </nav>
+    </div>
+
+    <div id="navLinks">
+        <nav>
+            <a href="about.html" style="padding-right:10px"> About </a>
+            <a href="portfolio.html"> Portfolio </a>
+        </nav>
+    </div>
+
+    <div id="myName">
+        <h1>Parker Munson</h1>
+    </div>
+
+    <div class="text"></div>
+
+    <script>
+        const div = document.querySelector(".text");
+        const text = "Copywriter + Full-stack Web Developer";
+
+        function textTypingEffect(element, text, i = 0) {
+            if (i === 0) {
+                element.textContent = " ";
+            }
+            element.textContent += text[i];
+
+            if (i === text.length - 1) {
+                return;
+            }
+
+            setTimeout(() => textTypingEffect(element, text, i + 1), 50);
+
+        }
+
+        textTypingEffect(div, text);
+    </script>
+
+
 </body>
+
 </html>

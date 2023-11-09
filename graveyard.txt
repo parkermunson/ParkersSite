@@ -1,0 +1,15 @@
+!!! THIS IS JAVASCRIPT THAT DELAYS DISPLAY OF PARAGRAPH !!!
+<p class="paragraph" id="delayedParagraph" style="display: none;">This paragraph will appear after a delay.</p>
+
+    <script>
+
+        const delayInMilliseconds = 3000;
+
+        function showDelayedParagraph() {
+            const delayedParagraph = document.getElementById('delayedParagraph');
+            delayedParagraph.style.display = 'block';
+
+        }
+
+        setTimeout(showDelayedParagraph, delayInMilliseconds);
+    </script>
