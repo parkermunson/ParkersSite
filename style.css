@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "RobotoLight";
+    src: url(Roboto-Light.ttf)
+}
+
+@font-face {
+    font-family: "RobotoThin";
+    src: url(Roboto-Thin.ttf)
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+nav {
+    font-family: "RobotoLight";
+}
+
+h1 {
+    font-family: "RobotoLight";
+}
+
+h2 {
+    font-family: "RobotLight";
+}
+
+h3 {
+    font-family: "RobotoThin";
+}
+
