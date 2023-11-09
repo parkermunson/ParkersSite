@@ -1,3 +1,4 @@
+/* CUSTOM FONTS */
 @font-face {
     font-family: "RobotoLight";
     src: url(Roboto-Light.ttf)
@@ -7,7 +8,7 @@
     font-family: "RobotoThin";
     src: url(Roboto-Thin.ttf)
 }
-
+/* MAIN ELEMENTS */
 body {
     background-color: whitesmoke;
 }
@@ -27,4 +28,17 @@ h2 {
 h3 {
     font-family: "RobotoThin";
 }
+ p {
+    
 
+ }
+
+
+/* ATTRIBUTE ID'S */
+#blue {
+    color: rgb(28,117,233);
+}
+
+#green {
+    color:rgb(52,168,83);
+}
