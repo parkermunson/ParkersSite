@@ -55,8 +55,8 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding-right: 15px;
-    margin-top: 15px;
+    padding-right: 45px;
+    margin-top: 20px;
 }
 
 
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-    font-family: "RobotLight";
+    font-family: "RobotoLight";
 }
 
 h3 {
@@ -74,6 +74,14 @@ h3 {
 
 p {
     font-family: "CormorantGRegular";
+    font-size: 16px;
+    margin-left: 65px;
+    text-align: justify;
+}
+
+p:hover {
+    cursor:default;
+
 }
 
 a:link {
@@ -106,6 +114,10 @@ a:hover {
     margin-left: 65px;
 }
 
+.text:hover {
+    cursor: default;
+}
+
 .paragraph {
     font-family: "CormorantGRegular";
     font-size: 16px;
@@ -113,6 +125,75 @@ a:hover {
     margin-left: 65px;
 
 }
+
+.hotdog {
+    display: flex;
+    justify-content: right;
+    position:fixed;
+    bottom:0px;
+    left:50%;
+}
+
+.hotdogPortfolio {
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    bottom:0px;
+    left:50%;
+}
+
+.project {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    margin-left: 65px;
+    margin-top: 55px;
+    border: solid .02px;
+    box-shadow: 10px 5px 5px lightgray;
+    border-color: lightgrey;
+    max-width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.project2 {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 65px;
+    border: solid .02px;
+    box-shadow: 10px 5px 5px lightgray;
+    border-color: lightgrey;
+    max-width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.project3 {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 65px;
+    border: solid .02px;
+    box-shadow: 10px 5px 5px lightgray;
+    border-color: lightgrey;
+    max-width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.footer {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
 /* FUNCTION IN GRAVEYARD */
 /* .delayedParagraph {
     font-family: "CormorantGRegular";
@@ -128,6 +209,62 @@ a:hover {
     display: flex;
     margin-top: 30px;
     margin-left: 65px;
+}
+
+#portfolio {
+    font-family: "RobotoLight";
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 65px;
+    position: relative;
+}
+
+#portfolioContent {
+    font-family: "CormorantGRegular";
+    font-size: 16px;
+    display: flex;
+    margin-left: 25px;
+    width:50%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+#project1 {
+    width: 240px;
+    height: 240px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
+
+#project2 {
+    width: 240px;
+    height: 240px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
+
+#project3 {
+    width: 240px;
+    height: 240px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
+
+#portfolio:hover {
+    color: rgb(28, 117, 233);
+    transition: color 0.5s ease-in-out;
 }
 
 #navHome {
