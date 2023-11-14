@@ -59,7 +59,6 @@ nav {
     margin-top: 20px;
 }
 
-
 h1 {
     font-family: "RobotoLight";
 }
@@ -105,8 +104,66 @@ a:hover {
     color: rgb(28, 117, 233);
 }
 
+input[type=text], select, textarea {
+    font-family: "RobotoLight";
+    width: 50%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+
+}
+
+input[type=email] {
+    font-family: "RobotoLight";
+    width: 50%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-family: "RobotoLight";
+    background-color: rgb(28, 117, 233);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(13, 78, 162);
+    transition: color 0.5s ease-in-out;
+  }
+
+  textarea[id=subject] {
+    font-family: "RobotoLight";
+    width: 50%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
 
 /* DIV CLASSES */
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-left: 65px;
+}
+
 .text {
     font-family: "RobotoLight";
     font-size: 16px;
@@ -205,6 +262,7 @@ a:hover {
 
 
 /* ATTRIBUTE ID'S */
+
 #myName {
     display: flex;
     margin-top: 30px;
